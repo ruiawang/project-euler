@@ -1,3 +1,6 @@
+"""
+We can simply brute force the number of divisors for each triangular number.
+"""
 import itertools, math
 
 def triangular(n):
