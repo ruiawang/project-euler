@@ -25,6 +25,8 @@ GRID = [
 ]
 
 def product(x, y, dx, dy, n):
+    """Computes the n-length product in a grid in a specificed
+    direction dx, dy at position x, y"""
     res = 1
     for i in range(n):
         res *= GRID[x + i * dx][y + i * dy]

@@ -3,6 +3,9 @@ We can simply iterate through each perimeter value
 and find all pythagorean triplets and maintain the maximum value
 """
 def find_triplets(p):
+    """
+    Finds the number of pythagorean triples that satisfy a sum value p
+    """
     result = 0
     for a in range(1, p + 1):
         for b in range(a, (p - a) // 2 + 1):
