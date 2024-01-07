@@ -7,9 +7,9 @@ Since x < 10, 10**(n-1) grows faster than x ** n, and thus
 for each choice of x from 1 to 9, we see that 10**(n-1) <= x**n can be rearranged
 into an inequality describing the maximum n until which the power x**n
 will be less than 10^(n-1), and thus an n-1 digit number, failing the condition.
-By taking a logarithm on both sides,  n-1 <= n log_10(x) yielding n <= 1/(1-log_10(x)). Similarly, if using ln the bound becomes:
-n <= ln(10)/(ln(10)-ln(x)) which is equivalent to our expression.
-All integer numbers k under this maximum will yield a k digit number for the kth power of x. 
+By taking a logarithm on both sides,  n-1 <= n log_10(x) yielding n <= 1/(1-log_10(x)). 
+Similarly, if using ln the bound becomes: n <= ln(10)/(ln(10)-ln(x)) which is equivalent to our expression.
+All integer numbers k under this maximum will yield a k digit number for the kth power of x, so we just sum up the integer truncation of this bound.
 From here we just sum up this bound for the possible bases 1 to 9.
 """
 import math
