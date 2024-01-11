@@ -5,7 +5,6 @@ Pentagonal numbers are calculated by p_n = n(3n-1)/2 and are generalized by taki
 """
 import functools
 
-@functools.cache
 def pentagonal(i):
     """Returns the generalized pentagonal number given by the value i"""
     return i*(3*i - 1)//2
