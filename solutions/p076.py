@@ -12,8 +12,7 @@ def pentagonal(i):
 
 @functools.cache
 def partition(n):
-    """
-    Recursively computes the partition function of n"""
+    """Recursively computes the partition function of n"""
     if n < 0:
         return 0
     if n == 0 or n == 1:
