@@ -28,6 +28,6 @@ def solve():
     for n in range(m, 1, -2):
         s += 4*(n**2)-6*(n-1)
     return s
-    # return (4*(m**3) + 3*(m**2) + 8*m - 9)/6
+    # return (4*(m**3) + 3*(m**2) + 8*m - 9)//6
 if __name__ == "__main__":
     print(solve())
